@@ -22,7 +22,8 @@ if not api_key:
 llm = ChatOpenAI(
     openai_api_base="https://openrouter.ai/api/v1",
     openai_api_key=os.environ["OPENAI_API_KEY"],
-    model_name="nvidia/nemotron-3-ultra-550b-a55b:free",
+    #model_name="openrouter/free",
+    model_name="google/gemini-2.0-flash-exp:free",
     temperature=0.5,
 )
 
@@ -30,8 +31,9 @@ llm = ChatOpenAI(
 print("💬 Chatbot Mistral vía OpenRouter (escribe 'salir' para terminar)\n")
 
 Meta_promt = """
-Como matemático experto, detecta si la intención del usuario es sumar o restar, unicamente 
-"""
+ Como experto en colorimetria, vas a clasificar la intención del usuario en {blanco}, {negro}, o {azul}. Donde una intención de color blanco es “que lindo día”, una intención de color negro es “la sabiduría es el mar de conocimiento” y una de color azul es “que hora es”. Responde únicamente con la clasificación de color (uno de los tres posibles) en {} una vez detectes la intención. Si no es clara la intención, intenta guiar al usuario para clasificar la intención.
+ """
+#Meta_promt = ""
 Memo = ''
 while True:
     user_input = input("👤 Tú: ")
