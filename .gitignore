@@ -1,0 +1,14 @@
+# Secretos y credenciales OAuth
+secrets/.env
+secrets/token.json
+.env
+token.json
+
+# Archivos generados por Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Configuración local del IDE
+.idea/

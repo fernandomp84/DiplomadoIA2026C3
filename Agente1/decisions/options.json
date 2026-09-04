@@ -1,0 +1,40 @@
+{
+  "options": [
+    {
+      "id": "suma(a,b)",
+      "aliases": ["suma", "sumar", "adicionar", "suma_dos_numeros"],
+      "description": "Sumar dos números.",
+      "function": "services.decision_functions.suma.run"
+    },
+    {
+      "id": "multiplica(a,b)",
+      "aliases": ["multiplica", "multiplicar", "producto", "multiplica_dos_numeros"],
+      "description": "Multiplicar dos números.",
+      "function": "services.decision_functions.multiplica.run"
+    },
+    {
+      "id": "suma_hasta(n)",
+      "aliases": ["suma_hasta", "sumar_hasta", "suma_sucesiva", "adicionar_sucesivamente"],
+      "description": "Sumar sucesivamente desde 1 hasta n.",
+      "function": "services.decision_functions.suma_hasta.run"
+    },
+    {
+      "id": "multiplica_hasta(n)",
+      "aliases": ["multiplica_hasta", "factorial", "producto_sucesivo", "multiplicar_sucesivamente"],
+      "description": "Multiplicar sucesivamente desde 1 hasta n.",
+      "function": "services.decision_functions.multiplica_hasta.run"
+    },
+    {
+      "id": "exponencial_hasta(n)",
+      "aliases": ["exponencial_hasta", "exponencial", "potencia"],
+      "description": "Aplica la base exponencial a un número.",
+      "function": "services.decision_functions.exponencial_hasta.run"
+    },
+    {
+      "id": "division(n,m)",
+      "aliases": ["Division", "Residuo", "Cociente"],
+      "description": "Realiza la division entre dos numeros.",
+      "function": "services.decision_functions.division.run"
+    }
+  ]
+}

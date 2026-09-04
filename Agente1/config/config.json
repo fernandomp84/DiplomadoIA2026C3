@@ -1,0 +1,16 @@
+{
+  "llm": {
+    "api_base": "https://openrouter.ai/api/v1",
+    "model_name": "cohere/north-mini-code:free",
+    "temperature": 0.2
+  },
+  "agent": {
+    "max_iterations": 10
+  },
+  "paths": {
+    "env_file": "../secrets/.env",
+    "classifier_prompt": "prompts/classifier_prompt.txt",
+    "decision_options": "decisions/options.json",
+    "personality": "prompts/personality.txt"
+  }
+}
